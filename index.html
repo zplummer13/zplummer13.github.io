@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Title of the document</title>
+        <title>ZP Portfolio</title>
 
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" />
@@ -12,16 +12,40 @@
         <!-- UIkit JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+
+        <!-- FontAwesome -->
+        <script src="https://use.fontawesome.com/67de8c45f7.js"></script>
     </head>
 
     <body>
-        <div class="uk-width-1-2@s uk-width-2-5@m">
-            <ul class="uk-nav uk-nav-default">
-                <li class="uk-active"><a href="#">Active</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-            </ul>
-        </div>
+        <nav class="uk-navbar-container" uk-navbar>
+
+            <div class="uk-navbar-left">
+
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#"><span class="uk-text-large uk-text-capitalize uk-text-middle">Zachary Plummer</span></a></li>
+                </ul>
+
+            </div>
+
+            <div class="uk-navbar-right">
+
+                <a class="uk-navbar-toggle"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
+                <div uk-dropdown="mode: click">
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
 
         <h1>The content of the document......</h1>
 
