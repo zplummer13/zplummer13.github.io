@@ -1,0 +1,43 @@
+@use "../sassvariables" as app;
+
+.box {
+  margin: 2vh 2vw;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 243, 222, 0.85);
+  font-family: app.$header-font;
+  color: app.$secondary-color;
+  font-size: 2.2vw;
+  width: 7vw;
+  height: 7vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center
+}
+
+.boxUnlocked {
+  cursor: pointer;
+}
+
+.boxLocked {
+  color: rgba(71, 68, 61, 1);
+  background-color: rgba(71, 68, 61, 0.671);
+  pointer-events: none;
+}
+
+.boxSmall {
+  width: 10vw;
+  height: 10vw;
+}
+
+.boxMedium {
+  width: 12vw;
+  height: 12vw;
+}
+
+.boxLarge {
+  width: 15vw;
+  height: 15vw;
+}
