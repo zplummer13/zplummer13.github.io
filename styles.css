@@ -1,9 +1,17 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+}
 .center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .row {
@@ -11,8 +19,37 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+} 
 
 .row * {
     margin: 5px;
+} 
+
+body {
+    background-color:#ce3635;
+    text-align: center;
+    color:#fff;
+  }
+
+.typewrite {
+    text-decoration: none;
+}
+  
+* { 
+    color:#fff;
+}
+
+h1 {
+    font-size: 5vh;
+    font-family: 'Fascinate', cursive;
+}
+
+h3 {
+    font-size: 3vh;
+    font-family: 'Fira Code', monospace;
+}
+
+a {
+    font-size: 3vh;
+    font-family: 'Fira Code', monospace;
 }
