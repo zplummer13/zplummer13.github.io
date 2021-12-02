@@ -19,11 +19,14 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 6%;
 } 
 
-.row * {
-    margin: 5px;
-} 
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+}
 
 body {
     background-color:#ce3635;
@@ -41,7 +44,8 @@ body {
 
 h1 {
     font-size: 5vh;
-    font-family: 'Fascinate', cursive;
+    /* font-family: 'Fascinate', cursive; */
+    font-family: 'Bungee Outline', cursive;
 }
 
 h3 {
